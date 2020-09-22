@@ -1,0 +1,3 @@
+# qirc
+
+C++ executable

@@ -1,0 +1,16 @@
+libs =
+import libs += libqtnet%lib{Qt5Network} libqtwidgets%lib{Qt5Widgets}
+import! moc = moc%exe{moc}
+
+for h: hxx{**}
+{
+    cxx{moc_$name($h)}: $h $moc
+    {{
+        diag moc $path($<[0])
+        $moc $config.cxx.poptions $path($<[0]) -o $path($>)
+    }}
+}
+
+exe{qirc}: {hxx ixx txx cxx}{**} $libs testscript
+
+cxx.poptions =+ "-I$out_root" "-I$src_root"

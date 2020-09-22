@@ -1,0 +1,12 @@
+: 1
+name: qirc
+version: 0.1.0-a.0.z
+summary: A weechat relay client written in C++ using qt5
+license: CC0-1.0
+description-file: README.md
+url: https://github.com/rhg/qirc
+email: ricardo.gomez331@gmail.com
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
+requires: qt5-qtbase >= 5.15.1 ; lower might work but this is what I'm using
+requires: qt5-qtwidgets >= 5.15.1 ; ^
