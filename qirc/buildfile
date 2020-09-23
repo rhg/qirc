@@ -13,4 +13,6 @@ for h: hxx{**}
 
 exe{qirc}: {hxx ixx txx cxx}{**} $libs testscript
 
+./: exe{qirc}
+
 cxx.poptions =+ "-I$out_root" "-I$src_root"
