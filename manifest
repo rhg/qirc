@@ -1,0 +1,11 @@
+: 1
+name: qirc
+version: 0.1.0-a.0.z
+summary: qirc - C++/Qt5 weechat relay client
+license: CC0-1.0
+description-file: README.md
+url: https://github.com/rhg/qirc
+email: ricardo.gomez331@gmail.com
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
+#depends: libhello ^1.0.0
