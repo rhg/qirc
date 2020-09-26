@@ -8,4 +8,4 @@ url: https://github.com/rhg/qirc
 email: ricardo.gomez331@gmail.com
 depends: * build2 >= 0.13.0
 depends: * bpkg >= 0.13.0
-#depends: libhello ^1.0.0
+depends: libgumbo ; git dep so no version needed
