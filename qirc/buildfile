@@ -1,5 +1,5 @@
 libs =
-import libs += libgumbo%lib{gumbo}
+import libs += libgumbo%lib{gumbo} libqtcore%lib{Qt5Core} libqtwebsockets%lib{Qt5WebSockets}
 
 exe{qirc}: {hxx ixx txx cxx}{**} $libs testscript
 
